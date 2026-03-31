@@ -1,0 +1,23 @@
+{
+  "model": "SmolVLM-500M",
+  "platform": "NVIDIA Jetson Orin Nano 8GB",
+  "precision": "FP16",
+  "benchmark": "VQAv2",
+  "num_samples": 50,
+  "timing_ms": {
+    "prefill": 869.9,
+    "decode": 367.3,
+    "total": 1630.29
+  },
+  "components_ms": {
+    "vision": 390.29,
+    "feedforward": 112.87,
+    "attention": 82.78,
+    "normalization": 121.53
+  },
+  "throughput_tok_s": 6.97,
+  "memory_peak_mb": 1473.4,
+  "accuracy": {
+    "exact_match": 0.6133
+  }
+}

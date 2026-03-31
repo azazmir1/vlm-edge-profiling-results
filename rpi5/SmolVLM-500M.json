@@ -1,0 +1,19 @@
+{
+  "model": "SmolVLM-500M",
+  "platform": "Raspberry Pi 5 16GB",
+  "precision": "FP32",
+  "benchmark": "detailed_caption",
+  "num_samples": 1,
+  "note": "FFN and Attn not instrumented on RPi5. EM from separate VQAv2 run.",
+  "timing_ms": {
+    "vision": 47413.61,
+    "prefill": 77602.53,
+    "decode": 102040.59,
+    "total": 179645.18
+  },
+  "throughput_tok_s": 0.56,
+  "memory_peak_mb": 3569.0,
+  "accuracy": {
+    "exact_match": 0.46
+  }
+}

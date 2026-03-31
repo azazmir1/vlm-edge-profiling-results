@@ -1,0 +1,19 @@
+{
+  "model": "Florence-2-base-ft",
+  "platform": "Raspberry Pi 5 16GB",
+  "precision": "FP32",
+  "benchmark": "detailed_caption",
+  "num_samples": 1,
+  "note": "FFN and Attn not instrumented on RPi5. EM from separate VQAv2 run.",
+  "timing_ms": {
+    "vision": 8311.08,
+    "prefill": 11560.03,
+    "decode": 19040.72,
+    "total": 30602.41
+  },
+  "throughput_tok_s": 1.76,
+  "memory_peak_mb": 1802.6,
+  "accuracy": {
+    "exact_match": 0.64
+  }
+}

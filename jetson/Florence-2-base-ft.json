@@ -1,0 +1,23 @@
+{
+  "model": "Florence-2-base-ft",
+  "platform": "NVIDIA Jetson Orin Nano 8GB",
+  "precision": "FP16",
+  "benchmark": "VQAv2",
+  "num_samples": 50,
+  "timing_ms": {
+    "prefill": 226.53,
+    "decode": 74.9,
+    "total": 332.22
+  },
+  "components_ms": {
+    "vision": 133.05,
+    "feedforward": 6.6,
+    "attention": 13.64,
+    "normalization": 9.56
+  },
+  "throughput_tok_s": 29.91,
+  "memory_peak_mb": 527.2,
+  "accuracy": {
+    "exact_match": 0.7533
+  }
+}

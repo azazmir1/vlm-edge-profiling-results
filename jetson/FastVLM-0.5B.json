@@ -1,0 +1,23 @@
+{
+  "model": "FastVLM-0.5B",
+  "platform": "NVIDIA Jetson Orin Nano 8GB",
+  "precision": "FP16",
+  "benchmark": "VQAv2",
+  "num_samples": 50,
+  "timing_ms": {
+    "prefill": 508.97,
+    "decode": 3414.34,
+    "total": 3986.52
+  },
+  "components_ms": {
+    "vision": 338.35,
+    "feedforward": 784.53,
+    "attention": 543.49,
+    "normalization": 630.77
+  },
+  "throughput_tok_s": 8.5,
+  "memory_peak_mb": 1345.9,
+  "accuracy": {
+    "exact_match": 0.1933
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "model": "SmolVLM-256M",
+  "platform": "NVIDIA Jetson Orin Nano 8GB",
+  "precision": "FP16",
+  "benchmark": "VQAv2",
+  "num_samples": 50,
+  "timing_ms": {
+    "prefill": 851.4,
+    "decode": 356.55,
+    "total": 1623.9
+  },
+  "components_ms": {
+    "vision": 393.89,
+    "feedforward": 81.8,
+    "attention": 78.96,
+    "normalization": 118.83
+  },
+  "throughput_tok_s": 7.47,
+  "memory_peak_mb": 886.7,
+  "accuracy": {
+    "exact_match": 0.4733
+  }
+}

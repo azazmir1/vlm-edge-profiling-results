@@ -1,0 +1,23 @@
+{
+  "model": "LFM2-VL-450M",
+  "platform": "NVIDIA Jetson Orin Nano 8GB",
+  "precision": "FP16",
+  "benchmark": "VQAv2",
+  "num_samples": 50,
+  "timing_ms": {
+    "prefill": 149.35,
+    "decode": 101.59,
+    "total": 267.97
+  },
+  "components_ms": {
+    "vision": 35.18,
+    "feedforward": 46.11,
+    "attention": 22.25,
+    "normalization": 33.49
+  },
+  "throughput_tok_s": 14.06,
+  "memory_peak_mb": 901.8,
+  "accuracy": {
+    "exact_match": 0.8067
+  }
+}

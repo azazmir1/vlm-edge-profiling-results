@@ -1,0 +1,19 @@
+{
+  "model": "FastVLM-0.5B",
+  "platform": "Raspberry Pi 5 16GB",
+  "precision": "FP32",
+  "benchmark": "detailed_caption",
+  "num_samples": 1,
+  "note": "FFN and Attn not instrumented on RPi5. EM from separate VQAv2 run.",
+  "timing_ms": {
+    "vision": 19089.34,
+    "prefill": 24962.87,
+    "decode": 143202.18,
+    "total": 168165.92
+  },
+  "throughput_tok_s": 0.6,
+  "memory_peak_mb": 6284.6,
+  "accuracy": {
+    "exact_match": 0.16
+  }
+}
