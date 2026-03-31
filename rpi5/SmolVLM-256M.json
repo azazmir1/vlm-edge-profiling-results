@@ -2,17 +2,19 @@
   "model": "SmolVLM-256M",
   "platform": "Raspberry Pi 5 16GB",
   "precision": "FP32",
-  "benchmark": "detailed_caption",
-  "num_samples": 1,
-  "note": "FFN and Attn not instrumented on RPi5. EM from separate VQAv2 run.",
+  "benchmark": "VQAv2",
+  "num_samples": 50,
+  "source": "https://github.com/azazmir1/vlm-compression-benchmark/blob/master/results/rpi5/baseline_fp32/HuggingFaceTB__SmolVLM-256M-Instruct.json",
   "timing_ms": {
-    "vision": 48299.08,
-    "prefill": 71819.02,
-    "decode": 41754.65,
-    "total": 113575.3
+    "vision": 51515.2,
+    "feedforward": 201.89,
+    "attention": 93.57,
+    "prefill": 74456.1,
+    "decode": 1178.93,
+    "total": 76022.5
   },
-  "throughput_tok_s": 0.89,
-  "memory_peak_mb": 2545,
+  "throughput_tok_s": 2.38,
+  "memory_peak_mb": 3437.7,
   "accuracy": {
     "exact_match": 0.44
   }

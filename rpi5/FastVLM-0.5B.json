@@ -2,17 +2,19 @@
   "model": "FastVLM-0.5B",
   "platform": "Raspberry Pi 5 16GB",
   "precision": "FP32",
-  "benchmark": "detailed_caption",
-  "num_samples": 1,
-  "note": "FFN and Attn not instrumented on RPi5. EM from separate VQAv2 run.",
+  "benchmark": "VQAv2",
+  "num_samples": 50,
+  "source": "https://github.com/azazmir1/vlm-compression-benchmark/blob/master/results/rpi5/baseline_fp32/apple__FastVLM-0.5B.json",
   "timing_ms": {
-    "vision": 19089.34,
-    "prefill": 24962.87,
-    "decode": 143202.18,
-    "total": 168165.92
+    "vision": 18349.1,
+    "feedforward": 701.09,
+    "attention": 140.76,
+    "prefill": 23894.8,
+    "decode": 35730.05,
+    "total": 59698.1
   },
-  "throughput_tok_s": 0.6,
-  "memory_peak_mb": 6284.6,
+  "throughput_tok_s": 0.81,
+  "memory_peak_mb": 4565.3,
   "accuracy": {
     "exact_match": 0.16
   }

@@ -4,15 +4,17 @@
   "precision": "FP32",
   "benchmark": "VQAv2",
   "num_samples": 50,
-  "note": "Prefill and Decode not available for this model on RPi5. FFN and Attn not instrumented.",
+  "source": "https://github.com/azazmir1/vlm-compression-benchmark/blob/master/results/rpi5/baseline_fp32/LiquidAI__LFM2-VL-450M.json",
   "timing_ms": {
-    "vision": 5404.0,
-    "prefill": null,
-    "decode": null,
+    "vision": 2471.8,
+    "feedforward": 499.85,
+    "attention": 55.21,
+    "prefill": 6234.9,
+    "decode": 1191.36,
     "total": 7444.0
   },
-  "throughput_tok_s": null,
-  "memory_peak_mb": 2901.0,
+  "throughput_tok_s": 1.22,
+  "memory_peak_mb": 2901.1,
   "accuracy": {
     "exact_match": 0.72
   }
