@@ -6,15 +6,15 @@
   "num_samples": 50,
   "source": "https://github.com/azazmir1/vlm-compression-benchmark/blob/master/results/rpi5/baseline_fp32/microsoft__Florence-2-base-ft.json",
   "timing_ms": {
-    "vision": 9046.2,
-    "feedforward": 67.22,
-    "attention": 38.01,
-    "prefill": null,
-    "decode": null,
-    "total": 11845.8
+    "vision": 9210.6,
+    "feedforward": 222.12,
+    "attention": 120.52,
+    "prefill": 11456.66,
+    "decode": 768.45,
+    "total": 12261.18
   },
-  "throughput_tok_s": null,
-  "memory_peak_mb": 2240.5,
+  "throughput_tok_s": 2.92,
+  "memory_peak_mb": 2286.4,
   "accuracy": {
     "exact_match": 0.64
   }
